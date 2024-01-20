@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding:0;
+  text-decoration: none;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  display:flex;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main{
+  width: 100%;
+  padding: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sidebar{
+  background: #d91e1e;
+  color: #fff;
+  height: 100vh;
+  width: 200px;
+  transition: all 0.5s;
+}
+.top_section{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items:center;
+  padding:20px 15px;
+}
+.logo{
+  font-size: 30px;
+}
+.bars{
+  display: flex;
+  font-size: 25px;
+  margin-left: 50px;
+}
+.link{
+  display: flex;
+  color: #fff;
+  padding: 10px 15px;
+  gap: 15px;
+  transition: all 0.5s;
+}
+.link:hover{
+  background:lightskyblue;
+  color: #000;
+  transition: all 0.5s;
+}
+.active{
+  background: lightskyblue;
+  color: #000;
+}
+.icon, .link_text{
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.laable-form{
+  width: 105px;
+height: 10px;
+flex-shrink: 0;
+  color: #000;
+  display: flex;
+  justify-content: end;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 200;
+line-height: normal;
+}
+.form-input{
+  
+  width: 302px;
+  height: 25px;
+  flex-shrink: 0;
+background: #FFF;
+}
+.form-input2{
+  border: 1px solid #000;
+ 
+  flex-shrink: 0;
+background: #FFF;
+}
+.parnt-container1 {
+  margin-left: 60px;
+}
+.custom-width-input {
+  width: calc(100% - 10px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
